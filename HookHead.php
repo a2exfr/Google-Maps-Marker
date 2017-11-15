@@ -25,7 +25,7 @@ class GM_head{
 					  $this->GMStyle 		= '';
 			}
 			
-		$page->head .= '<script type="text/javascript" src="http://maps.google.com/maps/api/js?key='.$this->apikey.'"></script>';
+		$page->head .= '<script type="text/javascript" src="//maps.google.com/maps/api/js?key='.$this->apikey.'"></script>';
 		$page->head .= '<script type="text/javascript" src="'.$addonRelativeCode . '/js/GM_page.js"></script>';
 		$page->css_user[] = $addonRelativeCode.'/css/maps_page.css';
 	

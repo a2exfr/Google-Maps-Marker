@@ -149,8 +149,8 @@ class SectionGoogleMaps{
 				
 				echo ' <div class="map-container" '.$style.'>';
 				   echo ' <div class="btn-full-screen">';
-						echo ' <a id="btn-enter-full-screen"><img src="' . $addonRelativeCode . '/img/fullscreen_enter.png"/></a>';
-						echo '<a id="btn-exit-full-screen"><img src="' . $addonRelativeCode . '/img/fullscreen_exit.png"/></a>';
+						echo ' <a id="btn-enter-full-screen"><img alt="enter fullscreen" src="' . $addonRelativeCode . '/img/fullscreen_enter.png"/></a>';
+						echo '<a id="btn-exit-full-screen"><img alt="exit fullscreen" src="' . $addonRelativeCode . '/img/fullscreen_exit.png"/></a>';
 				  echo '  </div>';
 					echo '<div class="mapCanvas '.$cl.'" style=" width: '.$sizeW.'px; height: '.$sizeH.'px;'.$ratio.'"></div>';
 			   echo ' </div>';

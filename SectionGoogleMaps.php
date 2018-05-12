@@ -179,6 +179,9 @@ class SectionGoogleMaps{
 					  $data['apikey']		= '';
 					  $data['GMStyle']		= '';
 			}
+		$page->head .= '<script type="text/javascript" src="//maps.google.com/maps/api/js?key='.$config['apikey'].'"></script>';
+		$page->head_js[] = $addonRelativeCode . '/js/GM_page.js';
+		$page->css_user[] = $addonRelativeCode.'/css/maps_page.css';		
 	return $data;
 	}
 	

@@ -10,6 +10,9 @@ defined('is_running') or die('Not an entry point...');
 
 class GM_head{
 
+	private $apikey;
+	private $GMStyle;
+
 	function __construct(){
 
 		global $addonRelativeCode, $page, $addonPathData;
@@ -24,9 +27,9 @@ class GM_head{
 			$this->apikey = '';
 			$this->GMStyle = '';
 		}
-
-		$page->head .= '<script type="text/javascript" src="//maps.google.com/maps/api/js?key=' . $this->apikey . '"></script>';
 		$page->head .= '<script type="text/javascript" src="' . $addonRelativeCode . '/js/GM_page.js"></script>';
+		$page->head .= '<script type="text/javascript" src="//maps.google.com/maps/api/js?key=' . $this->apikey . '&callback=startGoogleMaps"></script>';
+
 		$page->css_user[] = $addonRelativeCode . '/css/maps_page.css';
 
 	}

@@ -166,24 +166,21 @@ class SectionGoogleMaps{
 		return $section_data;
 	}
 
-	static function GetData(){
-		global $addonRelativeCode, $page, $addonPathData;
+	function GetData(){
+		global $addonRelativeCode, $page,$addonPathData;
 
-		$configFile = $addonPathData . '/config.php';
-		$data = [];
-		if (file_exists($configFile)){
-			include $configFile;
-			$data['apikey'] = $config['apikey'];
-			$data['GMStyle'] = $config['GMStyle'];
+		$configFile       = $addonPathData.'/config.php';
+		$data=array();
+			if (file_exists($configFile)) {
+				include $configFile;
+				$data['apikey']		= $config['apikey'];
+				$data['GMStyle'] 		= $config['GMStyle'];
 
-		} else {
-			$data['apikey'] = '';
-			$data['GMStyle'] = '';
-		}
-		$page->head .= '<script type="text/javascript" src="//maps.google.com/maps/api/js?key=' . $config['apikey'] . '&callback=startGoogleMaps"></script>';
-		$page->head_js[] = $addonRelativeCode . '/js/GM_page.js';
-		$page->css_user[] = $addonRelativeCode . '/css/maps_page.css';
-		return $data;
+			} else {
+					  $data['apikey']		= '';
+					  $data['GMStyle']		= '';
+			}
+	return $data;
 	}
 
 }

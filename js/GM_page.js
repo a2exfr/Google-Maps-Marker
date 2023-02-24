@@ -203,5 +203,6 @@ function initmap(mapa, map_data, section) {
 }
 
 function startGoogleMaps() {
-	google.maps.event.addDomListener(window, 'load', initialize_new)
+	// google.maps.event.addDomListener(window, 'load', initialize_new)
+	window.addEventListener('load', initialize_new)
 }

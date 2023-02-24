@@ -1,11 +1,4 @@
 <?php
-/*
-plugin for Google Maps Marker
-Author: a2exfr
-http://my-sitelab.com/
-Date: 03-11-2016
-Version 1.0.8 */
-
 defined('is_running') or die('Not an entry point...');
 
 class GM_head{

@@ -1,10 +1,3 @@
-/*
-plugin for Google Maps Marker
-Author: a2exfr
-http://my-sitelab.com/
-Date: 03-11-2016
-Version 1.0.8 */
-
 function gp_init_inline_edit(area_id, section_object) {
 
 	loaded()

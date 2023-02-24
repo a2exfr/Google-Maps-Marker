@@ -1,10 +1,3 @@
-/*
-plugin for Google Maps Marker
-Author: a2exfr
-http://my-sitelab.com/
-Date: 03-11-2016
-Version 1.0.8 */
-
 $(document).on('SectionAdded PreviewAdded', '.filetype-GoogleMaps_section', function () {
 	var map_data = $(this).find('.map_data')
 	var mapa = $(this).find('.mapCanvas')
